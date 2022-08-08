@@ -3,12 +3,9 @@ This is a Readme template for web projects
 
 # Project Name
 
-> Project Name
+> Awesome books: with ES6. This project, will restructure the Awesome books app code. The goal is to make it more organized by using modules and practice the ES6 syntax.
 >
 
-
-
-| *A Screenshot*
 ## Built With
 
 ### Languages:
