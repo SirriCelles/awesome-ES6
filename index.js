@@ -1,15 +1,14 @@
 /* eslint-disable linebreak-style */
-import Book from "./modules/book.js";
-import loadList from "./modules/displayBook.js";
-import { DateTime } from "./modules/luxon.js"
-
+import Book from './modules/book.js';
+import loadList from './modules/displayBook.js';
+import { DateTime } from './modules/luxon.js';
 
 const timeDisplay = document.getElementById('date');
 
 const refreshTime = () => {
   const now = DateTime.now();
   timeDisplay.textContent = now;
-}
+};
 setInterval(refreshTime, 1000);
 
 const list = document.querySelector('.list');
@@ -24,34 +23,31 @@ const titleCheck = document.querySelector('.title-check');
 const authorCheck = document.querySelector('.author-check');
 const bookList = document.querySelector('.list-wrapper');
 
-
 const refreshList = () => {
-    bookList.textContent = '';
-    bookList.append(loadList());
-}
+  bookList.textContent = '';
+  bookList.append(loadList());
+};
 
 bookList.append(loadList());
 
 alist.addEventListener('click', () => {
-    addNew.classList.add('display-none');
-    list.classList.remove('display-none');
-    contact.classList.add('display-none');
-    refreshList();
+  addNew.classList.add('display-none');
+  list.classList.remove('display-none');
+  contact.classList.add('display-none');
+  refreshList();
 });
 
 anew.addEventListener('click', () => {
-    addNew.classList.remove('display-none');
-    list.classList.add('display-none');
-    contact.classList.add('display-none');
+  addNew.classList.remove('display-none');
+  list.classList.add('display-none');
+  contact.classList.add('display-none');
 });
 
 acontact.addEventListener('click', () => {
-    addNew.classList.add('display-none');
-    list.classList.add('display-none');
-    contact.classList.remove('display-none');
+  addNew.classList.add('display-none');
+  list.classList.add('display-none');
+  contact.classList.remove('display-none');
 });
-
-
 
 const validateForm = (title, author) => {
   if (title === '' || title === undefined) {
@@ -89,7 +85,7 @@ document.querySelector('body').addEventListener('click', (event) => {
     const book = new Book();
     book.removeBook(index);
     setTimeout(() => {
-        refreshList();
+      refreshList();
     }, 500);
   }
 });
