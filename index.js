@@ -6,7 +6,7 @@ import { DateTime } from './modules/luxon.js';
 const timeDisplay = document.getElementById('date');
 
 const refreshTime = () => {
-  const now = DateTime.now();
+  const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
   timeDisplay.textContent = now;
 };
 setInterval(refreshTime, 1000);

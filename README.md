@@ -1,7 +1,5 @@
-# readme
-This is a Readme template for web projects
 
-# Project Name
+# Awesome Books
 
 > Awesome books: with ES6. This project, will restructure the Awesome books app code. The goal is to make it more organized by using modules and practice the ES6 syntax.
 >
@@ -21,7 +19,7 @@ This is a Readme template for web projects
 
 This is hosted on the live demo link below.
 
-[Live Demo Link](https://sirricelles.github.io/)
+[Live Demo Link](https://sirricelles.github.io/awesome-ES6/)
 
 ## Getting Started
 
@@ -57,7 +55,6 @@ Feel free to check the [issues page](https://github.com/SirriCelles/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
 
 
 ## 📝 License
